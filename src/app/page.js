@@ -6,6 +6,8 @@ import { FaArrowRight } from "react-icons/fa";
 // import GlobeVisualization from './GlobeVisualization';
 
 import dynamic from 'next/dynamic';
+import Hero from './Hero';
+import NavBar from './NavBar';
 
 const DynamicGlobeComponent = dynamic(() => import('./GlobeComponent'), {
     ssr: false, // This ensures the component is only rendered on the client-side
@@ -16,9 +18,15 @@ const QuadranglePage = () => {
         color: 'rgba(0, 0, 0, 0.5)', // 0.5 represents 50% transparency, you can adjust it as needed
     };
     return (
-        <div className='w-full bg-slate-50 relative'>
-            <GradientComponent />
-            <div className="flex items-center justify-center h-screen absolute top-0 left-0 right-0 bottom-0">
+       <>
+       <GradientComponent  />
+       <header>
+        <NavBar />
+
+       </header>
+       <main >
+            
+            {/* <div className="flex items-center justify-center h-screen absolute top-0 left-0 right-0 bottom-0">
                 <div className="max-w-lg text-left text-box  z-0">
                     <p className="text-7xl bold text-slate-900 font-bold" >
                         Financial infrastructure for the internet
@@ -28,7 +36,8 @@ const QuadranglePage = () => {
                     </p>
                     <button className='button-18 mt-5'>Start <FaArrowRight className='ml-2' /> </button>
                 </div>
-            </div>
+            </div> */}
+            <Hero />
             <br />
             <br />
             <br />
@@ -155,7 +164,8 @@ const QuadranglePage = () => {
             <br />
 
             <br />
-        </div>
+        </main>
+       </>
     );
 };
 

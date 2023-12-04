@@ -2,44 +2,139 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.container {
+  max-width: 1240px;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.icon {
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.inline-link {
+  color: #5f5bfe;
+  transition: 300ms;
+}
+.inline-link:hover {
+  color: #002640;
+}
+
+.gradient-wrapper {
+  position: absolute;
+  left: 0;
+  top: -80rem;
+  width: 100%;
+  height: 120rem;
+  transform: skewY(-12deg);
+  z-index: -3;
+  display: grid;
+  place-items: stretch;
+}
+
+#gradient-canvas {
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family: "Inter", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  color-scheme: light;
 }
 
 body {
-  color: black;
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-size: 16px;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+footer {
+  transform: skewY(-7deg);
 }
 
 
 #gradient-canvas {
   width: 100%;
   height: 100%;
-  z-index: 2;
-  opacity: 0.8;
-  --gradient-color-1: #4CD4B0;
-  --gradient-color-2: #FFFCE6;
-  --gradient-color-3: #F24D16;
-  --gradient-color-4: #EDD834;
+  /* z-index: 2; */
+
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
 }
 
 
 .canvas {
-  position: relative;
-  top: -100px;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  position: absolute;
+  left: 0;
+  top: -80rem;
+  width: 100%;
+  height: 120rem;
+  transform: skewY(-12deg);
+  z-index: -3;
+  display: grid;
+  place-items: stretch;
+  /* clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); */
 
 }
 
@@ -51,12 +146,13 @@ body {
   position: relative;
 }
 
-.text-box{
+.text-box {
   position: relative;
-  top:-150px
+  top: -150px
 }
-.world{
-  
+
+.world {
+
   position: relative;
   right: -50vw;
   width: 200vw;
@@ -64,19 +160,20 @@ body {
   overflow: hidden;
 }
 
-.text-box2{
+.text-box2 {
   position: relative;
-  top:200px;
+  top: 200px;
 }
 
 .sus {
   position: absolute;
-  top: 50%; /* Adjust the top value as needed */
+  top: 50%;
+  /* Adjust the top value as needed */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   color: white;
- 
+
 }
 
 
@@ -113,7 +210,7 @@ body {
 }
 
 .button-18:hover,
-.button-18:focus { 
+.button-18:focus {
   background-color: #0A2640;
   color: #ffffff;
 }
@@ -123,7 +220,7 @@ body {
   color: rgb(255, 255, 255, .7);
 }
 
-.button-18:disabled { 
+.button-18:disabled {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);

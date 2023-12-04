@@ -14,7 +14,7 @@ const GradientComponent = () => {
     }, []);
 
     return (
-        <div className='canvas'>
+        <div className='canvas isLoaded'>
             <canvas id="gradient-canvas" data-js-darken-top  data-transition-in style={{ width: '100%', height: '100%' }} />
         </div>
     );
