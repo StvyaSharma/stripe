@@ -2,6 +2,7 @@
 import React from 'react';
 import GradientComponent from './GradientComponent';
 import GlobeComponent from './GlobeComponent';
+import { FaArrowRight } from "react-icons/fa";
 // import GlobeVisualization from './GlobeVisualization';
 
 import dynamic from 'next/dynamic';
@@ -25,6 +26,7 @@ const QuadranglePage = () => {
                     <p className="text-md text-slate-900" >
                         Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.
                     </p>
+                    <button className='button-18 mt-5'>Start <FaArrowRight className='ml-2' /> </button>
                 </div>
             </div>
             <br />
