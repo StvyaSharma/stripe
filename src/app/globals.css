@@ -144,6 +144,7 @@ footer {
   overflow: hidden;
   background-color: #000010;
   position: relative;
+  background-color:#10253E ;
 }
 
 .text-box {
@@ -224,4 +225,120 @@ footer {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+
+
+
+
+
+
+.Satellite {
+  position: relative;
+  height: 100%;
+  left: -20px;
+  width: calc(100% + 40px);
+  overflow-x: hidden;
+  padding-top: calc(100% + 40px);
+  background: #11253e;
+  margin: 35px 0 15px;
+}
+.Satellite {
+  left: -150px;
+  width: calc(100% + 300px);
+  padding-top: calc(100% + 300px);
+}
+.Satellite__globe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.frame{
+  top:'-300px';
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  
+  .frame {
+    top:-200px !important
+
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .frame {
+    top:-300px !important
+
+  }
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  
+  .frame {
+    top:-200px
+
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  
+  .frame {
+    top:200px
+
+  }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  
+  .frame {
+    top:100px
+
+  }
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  
+  .frame {
+    top:200px
+
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  
+  .frame {
+    top:500px
+
+  }
 }

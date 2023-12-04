@@ -9,6 +9,8 @@ import dynamic from 'next/dynamic';
 import Hero from './Hero';
 import NavBar from './NavBar';
 import Terminal from './Terminal';
+import StripeGlobe from './StripeGlobe';
+import StripeGlobeIframe from './StripeGlobeIframe';
 
 const DynamicGlobeComponent = dynamic(() => import('./GlobeComponent'), {
     ssr: false, // This ensures the component is only rendered on the client-side
@@ -149,6 +151,8 @@ const QuadranglePage = () => {
                     <br/>
                 <Terminal />
                 </div>
+
+                <StripeGlobeIframe />
 
                 {/* <div className='world '>
                     <DynamicGlobeComponent />

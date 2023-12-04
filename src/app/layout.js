@@ -19,6 +19,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          defer
+          src="https://b.stripecdn.com/site-srv/assets/compiled/js/blog/globe-f22b76d7dcb05af683c3.min.js"
+        ></script>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

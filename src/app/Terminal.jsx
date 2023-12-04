@@ -11,16 +11,16 @@ function Terminal() {
     return (
 
 
-        <div className="terminal-content">
-            <div className="terminal-upper">
-                <div className="upper-text">
-                    <span className="terminal-head">
+        <div className="terminal-content" style={{backgroundColor:''}}>
+            <div className="terminal-upper" style={{display:'flex'}}>
+                <div className="upper-text"  style={{ zIndex: '10'}}>
+                    <span className="terminal-head" style={{ zIndex: '10'}}>
                         Global scale
                     </span>
-                    <h1 className="terminal-title">
+                    <h1 className="terminal-title"  style={{ zIndex: '10'}}>
                         The backbone for global commerce
                     </h1>
-                    <p className="terminal-desc">
+                    <p className="terminal-desc"  style={{ zIndex: '10'}}>
                         Stripe makes moving money as easy and programmable as moving data. Our teams are based in offices around the world and we process hundreds of billions of dollars each year for ambitious businesses of all sizes.
                     </p>
 
