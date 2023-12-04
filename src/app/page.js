@@ -19,7 +19,7 @@ const QuadranglePage = () => {
             <GradientComponent />
             <div className="flex items-center justify-center h-screen absolute top-0 left-0 right-0 bottom-0">
                 <div className="max-w-lg text-left text-box  z-0">
-                    <p className="text-7xl bold text-slate-900" >
+                    <p className="text-7xl bold text-slate-900 font-bold" >
                         Financial infrastructure for the internet
                     </p>
                     <p className="text-md text-slate-900" >
@@ -74,60 +74,69 @@ const QuadranglePage = () => {
 
 
 
+            <div className='globe relative '>
+                <div className='sus'>
 
-            <div className='globe '>
-
-                {/* <div class="grid grid-cols-1 md:grid-cols-4 gap-4 ">
-                    <section class="col-span-4 md:col-span-1 bg-gray-200 p-4">
-                        <header class="text-center mb-2">
-                            <h1 class="text-4xl font-bold">250M+</h1>
+                    <section class="variant--Section  p-4 mb-4 text-left">
+                        <header class="text-center mb-4">
+                            <h2 class="text-xl font-semibold text-left">Global scale</h2>
+                            <h1 class="text-3xl font-bold text-left">The backbone for global commerce</h1>
                         </header>
-                        <div class="text-center">
-                            API requests per day, peaking at 13,000 requests a second.
+                        <div class="text-left">
+                            Stripe makes moving money as easy and programmable as moving data.
+                            Our teams are based in offices around the world, and we process hundreds of billions of dollars each year for ambitious businesses of all sizes.
                         </div>
                     </section>
 
-                    <section class="col-span-4 md:col-span-1 bg-gray-200 p-4">
-                        <header class="text-center mb-2">
-                            <h1 class="text-4xl font-bold">99.999%</h1>
-                        </header>
-                        <div class="text-center">
-                            historical uptime for
-                            <a
-                                href="https://status.stripe.com/"
-                                class="text-blue-500 underline"
-                                data-js-controller="AnalyticsButton"
-                                data-analytics-category="Links"
-                                data-analytics-action="Clicked"
-                                data-analytics-label="Global Stripe services"
-                            >
-                                Stripe services
-                            </a>
-                            .
-                        </div>
-                    </section>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4  p-4">
+                        <section class="col-span-4 md:col-span-1">
+                            <header class="text-center mb-2">
+                                <h1 class="text-4xl font-bold">250M+</h1>
+                            </header>
+                            <div class="text-center">
+                                API requests per day, peaking at 13,000 requests a second.
+                            </div>
+                        </section>
 
-                    <section class="col-span-4 md:col-span-1 bg-gray-200 p-4">
-                        <header class="text-center mb-2">
-                            <h1 class="text-4xl font-bold">47+</h1>
-                        </header>
-                        <div class="text-center">countries with local acquiring.</div>
-                    </section>
+                        <section class="col-span-4 md:col-span-1">
+                            <header class="text-center mb-2">
+                                <h1 class="text-4xl font-bold">99.999%</h1>
+                            </header>
+                            <div class="text-center">
+                                historical uptime for
+                                <a
+                            
+                                    class="text-blue-500 underline"
+                      
+                                >
+                                    Stripe services
+                                </a>
+                                .
+                            </div>
+                        </section>
 
-                    <section class="col-span-4 md:col-span-1 bg-gray-200 p-4">
-                        <header class="text-center mb-2">
-                            <h1 class="text-4xl font-bold">135+</h1>
-                        </header>
-                        <div class="text-center">currencies and payment methods supported.</div>
-                    </section>
-                </div> */}
+                        <section class="col-span-4 md:col-span-1">
+                            <header class="text-center mb-2">
+                                <h1 class="text-4xl font-bold">47+</h1>
+                            </header>
+                            <div class="text-center">countries with local acquiring.</div>
+                        </section>
 
+                        <section class="col-span-4 md:col-span-1">
+                            <header class="text-center mb-2">
+                                <h1 class="text-4xl font-bold">135+</h1>
+                            </header>
+                            <div class="text-center">currencies and payment methods supported.</div>
+                        </section>
+                    </div>
+                </div>
 
-                <div className='world'>
+                <div className='world '>
                     <DynamicGlobeComponent />
                 </div>
 
             </div>
+
 
             {/* <GlobeVisualization /> */}
 

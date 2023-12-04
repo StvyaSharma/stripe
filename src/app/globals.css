@@ -48,6 +48,7 @@ body {
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
   overflow: hidden;
   background-color: #000010;
+  position: relative;
 }
 
 .text-box{
@@ -59,9 +60,20 @@ body {
   position: relative;
   right: -50vw;
   width: 200vw;
+  z-index: 0;
 }
 
 .text-box2{
   position: relative;
   top:200px;
+}
+
+.sus {
+  position: absolute;
+  top: 50%; /* Adjust the top value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+ 
 }
