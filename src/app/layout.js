@@ -6,6 +6,8 @@ import './Hero-media.scss';
 
 import './NavBar.scss';
 import './Navbar-media.scss';
+import './Terminal.scss';
+import './Terminal-media.scss';
 
 const inter = Inter({ subsets: ['latin'] })
 

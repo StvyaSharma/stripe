@@ -140,7 +140,7 @@ footer {
 
 
 .globe {
-  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   overflow: hidden;
   background-color: #000010;
   position: relative;
@@ -153,11 +153,11 @@ footer {
 
 .world {
 
-  position: relative;
-  right: -50vw;
-  width: 200vw;
+  position: absolute;
+  top: -100px;
+  left: 50vw;
+  width: 100%;
   z-index: 0;
-  overflow: hidden;
 }
 
 .text-box2 {

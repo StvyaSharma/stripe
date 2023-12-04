@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 import dynamic from 'next/dynamic';
 import Hero from './Hero';
 import NavBar from './NavBar';
+import Terminal from './Terminal';
 
 const DynamicGlobeComponent = dynamic(() => import('./GlobeComponent'), {
     ssr: false, // This ensures the component is only rendered on the client-side
@@ -46,7 +47,7 @@ const QuadranglePage = () => {
             <br />
 
 
-            <div class="container mx-auto">
+            <div class="container mx-auto" style={{maxWidth:'1080px',marginBlock:'10rem',marginInline:'auto'}}>
                 <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
 
                     <div class=" p-4 flex items-center justify-center">
@@ -85,8 +86,8 @@ const QuadranglePage = () => {
 
 
 
-            <div className='globe relative '>
-                <div className='sus'>
+            <div className='globe relative  sm:pt-96 md:pt-48'>
+                {/* <div className='sus'>
 
                     <section class="variant--Section  p-4 mb-4 text-left">
                         <header class="text-center mb-4">
@@ -140,11 +141,18 @@ const QuadranglePage = () => {
                             <div class="text-center">currencies and payment methods supported.</div>
                         </section>
                     </div>
+                </div> */}
+
+                <div style={{marginTop:'160px',zIndex:'10'}}>
+                    <br/>
+                    <br/>
+                    <br/>
+                <Terminal />
                 </div>
 
-                <div className='world '>
+                {/* <div className='world '>
                     <DynamicGlobeComponent />
-                </div>
+                </div> */}
 
             </div>
 

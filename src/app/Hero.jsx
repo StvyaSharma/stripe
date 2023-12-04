@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import desktop from '../assets/images/desktop.jpg';
 import phone from '../assets/images/phone1.png';
-
+import { IoIosArrowForward, IoMdArrowForward } from 'react-icons/io';
 import Image from 'next/image'
 
 function Hero() {
+    const [isHovered, setHovered] = useState(false);
+    const [isHovered2, setHovered2] = useState(false);
     return (
         <section className="hero">
             <div>
@@ -33,13 +35,15 @@ function Hero() {
                 </div>
 
                 <div className="hero-btn-container">
-                    <button className="btn1">Start now &gt;</button>
-                    <button className="btn2">Contact sales &gt;</button>
+                    <button className="btn1 flex items-center" onMouseEnter={() => setHovered(true)}
+                        onMouseLeave={() => setHovered(false)} >Start now{isHovered ? <IoMdArrowForward /> : <IoIosArrowForward />}</button>
+                    <button className="btn2 flex items-center" onMouseEnter={() => setHovered2(true)}
+                        onMouseLeave={() => setHovered2(false)} >Contact sales {isHovered2 ? <IoMdArrowForward /> : <IoIosArrowForward />}</button>
                 </div>
             </div>
 
             <div className="hero-pictures">
-                <div style={{ position: 'absolute', top: '-200px', right: '-700px', width:'1198px',height:'811px' ,zIndex:1}}>
+                <div style={{ position: 'absolute', top: '-200px', right: '-700px', width: '1198px', height: '811px', zIndex: 1 }}>
                     <Image
                         src={desktop}
                         alt="desktop"
@@ -52,7 +56,7 @@ function Hero() {
                         }}
                     />
                 </div>
-                <div style={{ position: 'absolute', top: '-300px', right: '-100px', width:'581px',height:'1190px',zIndex:'2' }}>
+                <div style={{ position: 'absolute', top: '-300px', right: '-100px', width: '581px', height: '1190px', zIndex: '2' }}>
                     <Image
                         src={phone}
                         alt="phone"
