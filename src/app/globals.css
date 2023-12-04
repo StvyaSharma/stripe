@@ -61,6 +61,7 @@ body {
   right: -50vw;
   width: 200vw;
   z-index: 0;
+  overflow: hidden;
 }
 
 .text-box2{
