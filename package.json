@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.3"
+    "d3-dsv": "^3.0.1",
+    "globe.gl": "^2.32.1",
+    "index-array-by": "^1.4.1",
+    "next": "14.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
