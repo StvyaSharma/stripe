@@ -12,25 +12,23 @@ function Hero() {
             <div>
                 <div className="hero-title-container">
                     <h1 className="title title-main ">
-                        Payments infrastructure <br />
+             
+                    Financial infrastructure <br />
                         for the internet
                     </h1>
                     <p className="title title__second">
-                        Payments infrastructure <br />
+                    Financial infrastructure <br />
                         for the internet
                     </p>
                     <p className="title title__overlay">
-                        Payments infrastructure <br />
+                    Financial infrastructure <br />
                         for the internet
                     </p>
                 </div>
 
                 <div className="hero-desc-container">
                     <p className="desc">
-                        Millions of businesses of all sizes—from startups to
-                        large enterprises—use Stripe’s software and APIs to
-                        accept payments, send payouts, and manage their
-                        businesses online.
+                    Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue
                     </p>
                 </div>
 

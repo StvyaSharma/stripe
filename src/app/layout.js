@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="https://assets.ctfassets.net/fzn2n1nzq965/01hMKr6nEEGVfOuhsaMIXQ/c424849423b5f036a8892afa09ac38c7/favicon.ico" />
 
         <link rel="icon" href="https://assets.ctfassets.net/fzn2n1nzq965/01hMKr6nEEGVfOuhsaMIXQ/c424849423b5f036a8892afa09ac38c7/favicon.ico" />
-        <link rel="icon" href="https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&amp;h=180"></link>
+        <link rel="icon" href="https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&amp;h=180"/>
 
         <meta name="title" content="Stripe | Financial Infrastructure for the Internet" />
 
