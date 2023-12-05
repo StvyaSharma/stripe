@@ -342,3 +342,13 @@ footer {
 
   }
 }
+
+
+
+.imp-link {
+  
+}
+
+.imp-link:hover{
+  opacity: 0.6;
+}

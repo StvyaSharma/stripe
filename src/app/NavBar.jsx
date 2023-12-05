@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import { IoIosArrowForward,IoMdArrowForward } from 'react-icons/io';
+import { IoIosArrowForward, IoMdArrowForward } from 'react-icons/io';
 import { FaArrowRight } from 'react-icons/fa';
 
 
@@ -10,6 +10,8 @@ import { FaArrowRight } from 'react-icons/fa';
 function NavBar() {
     const [isHamburgerVisible, setIsHamburgerVisible] = useState(false);
     const [isHovered, setHovered] = useState(false);
+    const [isHovered2, setHovered2] = useState(false);
+    const [isHovered3, setHovered3] = useState(false);
 
     const handleHaburgerClick = () => {
         setIsHamburgerVisible((state) => !state);
@@ -25,7 +27,7 @@ function NavBar() {
                 <RxHamburgerMenu className="icon" onClick={handleHaburgerClick} />
             </div>
             {isHamburgerVisible && (
-                <div className="links">
+                <div className="links" >
                     <ul className="nav-list">
                         <li className='list-head'>
                             <div className='logo'>
@@ -34,29 +36,33 @@ function NavBar() {
                             <AiOutlineClose className='icon' onClick={handleHaburgerClick} />
                         </li>
                         <li>
-                            <a href="#prodcuts">Prodcuts</a>
+                            <a href="#prodcuts" className='imp-link'>Prodcuts</a>
                         </li>
                         <li>
-                            <a href="#solutions">Solutions</a>
+                            <a href="#solutions" className='imp-link'>Solutions</a>
                         </li>
                         <li>
-                            <a href="#developers">Developers</a>
+                            <a href="#developers" className='imp-link'>Developers</a>
                         </li>
                         <li>
-                            <a href="#resources">Resources</a>
+                            <a href="#resources" className='imp-link'>Resources</a>
                         </li>
                         <li>
-                            <a href="#pricing">Pricing</a>
+                            <a href="#pricing" className='imp-link'>Pricing</a>
                         </li>
-                        <li className='list-btn'>
-                            <button>Sign in {`>`}</button>
+                        <li className='list-btn' >
+                            <button
+                                className="flex items-center "
+                                onMouseEnter={() => setHovered2(true)}
+                                onMouseLeave={() => setHovered2(false)}
+                            >Sign in {isHovered2 ? <IoMdArrowForward /> : <IoIosArrowForward />}</button>
                         </li>
                     </ul>
                 </div>
             )}
 
-            <div className="links-media">
-                <ul className="nav-list-media">
+            <div className="links-media" style={{ marginLeft: '-18%' }}>
+                <ul className="nav-list-media" >
                     <li>
                         <a href="#prodcuts">Prodcuts</a>
                     </li>
@@ -75,7 +81,12 @@ function NavBar() {
                 </ul>
             </div>
 
-            <div className="sign-in">
+            <div className="sign-in flex items-center " style={{ display: 'flex' }}>
+                <ul className="nav-list-media" style={{ marginInline: '5px' }}>
+                    <li className="flex items-center imp-link "
+                        onMouseEnter={() => setHovered3(true)}
+                        onMouseLeave={() => setHovered3(false)} >Contact Sales{isHovered3 ? <IoMdArrowForward /> : <IoIosArrowForward />} </li>
+                </ul>
                 <button
                     className="flex items-center "
                     onMouseEnter={() => setHovered(true)}

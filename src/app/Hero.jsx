@@ -35,9 +35,9 @@ function Hero() {
                 </div>
 
                 <div className="hero-btn-container">
-                    <button className="btn1 flex items-center" onMouseEnter={() => setHovered(true)}
+                    <button className="btn1 flex items-center imp-link" onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)} >Start now{isHovered ? <IoMdArrowForward /> : <IoIosArrowForward />}</button>
-                    <button className="btn2 flex items-center" onMouseEnter={() => setHovered2(true)}
+                    <button className="btn2 flex items-center imp-link" onMouseEnter={() => setHovered2(true)}
                         onMouseLeave={() => setHovered2(false)} >Contact sales {isHovered2 ? <IoMdArrowForward /> : <IoIosArrowForward />}</button>
                 </div>
             </div>

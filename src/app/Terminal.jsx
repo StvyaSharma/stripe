@@ -4,6 +4,7 @@ import gear from '../assets/icons/gear.svg';
 import tab from '../assets/icons/tab.svg';
 import animatedBox from '../assets/icons/animated-box.svg';
 import html from '../assets/icons/html.svg';
+import Link from 'next/link';
 
 
 
@@ -48,9 +49,8 @@ function Terminal() {
                     <p className="desc">
 
                         historical uptime for <a class="
-    Link
-    
-  " data-js-controller="AnalyticsButton" data-analytics-category="Links" data-analytics-action="Clicked" data-analytics-label="Global Stripe services">Stripe services</a>
+    Link 
+  ">Stripe services</a>
                     </p>
 
                 </div>
