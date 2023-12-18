@@ -28,6 +28,7 @@ const QuadranglePage = () => {
 
        </header>
        <main >
+        <p> Testing</p>
             
             {/* <div className="flex items-center justify-center h-screen absolute top-0 left-0 right-0 bottom-0">
                 <div className="max-w-lg text-left text-box  z-0">
